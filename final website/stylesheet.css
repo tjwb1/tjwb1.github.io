@@ -1,0 +1,294 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+/* Basic styling for the main site */
+html {
+  /* box-sizing: border-box; */
+  font-family: "jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Logo area including the image background */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/street.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+#Logo2 {
+  transform: scale(80%);
+  margin: 0;
+  padding: 1%;
+  border: 2px solid #7d6608;
+}
+
+/* Small about paragraph under menu navbar */
+.about {
+  margin: 2em;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: xx-large;
+
+  color: #7d6608;
+}
+
+/* General styling for all H2 elements */
+h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* Controlling repsonsiveness of images? */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Nav bar styling */
+/* This moves the nav bar to the centre and takes the dots away and sets the padding and margin for appearance. */
+nav {
+  margin: 1em;
+  border-top: 1px solid #7d6608;
+  border-bottom: 1px solid #7d6608;
+  padding: 1em;
+  font-size: x-large;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+/* This removes the underline as default, colours amd spaces the nav items. */
+nav a {
+  display: inline-block;
+  /* padding: 0.5em; */
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+/* This adds underline and grey colour on hover and adds accessibility. */
+nav a:hover,
+nav a:focus {
+  transition: 0.5s;
+  color: #7d6608;
+  text-decoration: underline;
+}
+
+nav .open-menu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .primary-nav .close-menu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav .primary-nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .primary-nav .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .open-menu {
+    display: block;
+  }
+}
+
+/* Scrolling image area. */ /* Scrolling images black background box. */ /* .scroll-tile { margin-top: 3em; display: flex; justify-content: center; } */ /* .scroll-tile__bg { background-color: black; height: 5%; width: 100%; } */ /* This is the main scrolling image style. */
+.scroll {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  max-width: 850px;
+}
+
+/* Div that makes space between scroll and sub-tiles. */
+.space {
+  height: 50px;
+  /* width: 100%; */
+  border-bottom: 1px solid #7d6608;
+  margin: 1em 1em 5em;
+}
+.article-intro {
+  margin: 2em;
+  font-size: xx-large;
+  color: #7d6608;
+}
+
+/* Sub tiles styling. */
+
+.container {
+  max-width: 150em;
+  margin-inline: auto;
+  padding-inline: 2em;
+}
+
+/* .a1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+} */
+
+.article-grid {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.article {
+  aspect-ratio: 1/1.5;
+}
+
+.article-text {
+  align-self: end;
+  margin: 0.5em 0.5em 2em;
+  padding: 0.5em;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 0.1);
+}
+
+.article__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.article:hover {
+  transform: scale(102%);
+  transition: 0.5s;
+}
+
+/* @media(max-width:450px){
+
+} */
+
+/* Footer styling */
+
+footer {
+  /* background-color: #333; */
+  /* width: 100%; */
+  background-color: #7d6608;
+  padding: 3em 1em;
+  color: white;
+}
+
+footer a {
+  color: inherit;
+}
+
+.site-map {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.site-map a {
+  padding: 0.75em;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.site-map a:hover,
+.site-map a:focus {
+  text-decoration: underline;
+}
+
+.footer-info {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info a {
+  padding: 0.75em;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.footer-info a:hover,
+.footer-info a:focus {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social img {
+  padding: 2em;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+@media (max-width: 430px) {
+  .site-map {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}

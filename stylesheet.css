@@ -1,0 +1,388 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Basic styling for the main site */
+html {
+  /* box-sizing: border-box; */
+  font-family: "jost", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Logo area including the image background */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/street.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 330px;
+  position: fixed;
+  z-index: 999;
+}
+
+#Logo2 {
+  transform: scale(40%);
+  margin: 0;
+  padding: 1%;
+  border: 2px solid #7d6608;
+}
+
+/* Small about paragraph under menu navbar */
+.about {
+  position: relative;
+  margin: 2em;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: xx-large;
+  color: #7d6608;
+}
+
+/* General styling for all H2 elements */
+h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* Controlling repsonsiveness of images. */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header contains the desktop and modile nav bars. */
+header {
+  border-top: 10px solid white;
+  /* margin-top: 2em; */
+  display: flex;
+  background: white;
+  /* opacity: 0; */
+  text-align: center;
+
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  /* justify-content: flex-start; */
+}
+
+/* This section controls the hamburger menu position. */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #7d6608;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+/* This section controls the desktop nav bar menu */
+nav {
+  background: rgba(125, 102, 8, 0.6);
+  /* position: fixed; */
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 30%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  backdrop-filter: blur(2px);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #f5c815;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+/* Hover animation on desktop nav bar. */
+nav a:hover {
+  color: #7d6608;
+}
+
+/* When the hamburger menu is clicked. */
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* This is where the responsiveness is added. */
+@media (min-width: 600px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr minmax(600px, 1fr) 1fr;
+  }
+  nav {
+    all: unset;
+
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    color: #7d6608;
+    opacity: 1;
+    position: relative;
+  }
+
+  /* Hamburger menu responsivness */
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: #7d6608;
+    position: absolute;
+    bottom: -0.25em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  nav a:hover {
+    color: #f5c815;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+/* This resizes the header and logo when in mobile view. */
+@media (max-width: 600px) {
+  header {
+    border-top: none;
+    background: none;
+  }
+
+  .logo {
+    height: 200px;
+  }
+}
+
+/* This styles the image below the intro text. */
+.scroll {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  max-width: 850px;
+}
+.scroll-img:hover {
+  cursor: pointer;
+}
+
+.scroll-img button {
+  visibility: hidden;
+  border: none;
+  background: none;
+  color: black;
+  align-self: flex-end;
+}
+.scroll-img button:hover {
+  cursor: pointer;
+}
+
+/* Div that makes space between scroll and sub-tiles. */
+.space {
+  height: 50px;
+  /* width: 100%; */
+  border-bottom: 1px solid #7d6608;
+  margin: 1em 1em 5em;
+}
+.article-intro {
+  margin: 2em;
+  font-size: xx-large;
+  color: #7d6608;
+}
+
+/* Sub tiles styling. */
+
+.container {
+  max-width: 150em;
+  margin-inline: auto;
+  padding-inline: 2em;
+}
+
+.article-grid {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.article {
+  aspect-ratio: 1/1.5;
+}
+
+.article-text {
+  align-self: end;
+  margin: 0.5em 0.5em 2em;
+  padding: 0.5em;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 0.1);
+}
+
+.article__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* Animation on sub-article images to show which tile is being moused over. */
+.article__img:hover {
+  transform: scale(103%);
+  transition: 0.3s;
+}
+/* Footer styling */
+
+footer {
+  /* background-color: #333; */
+  /* width: 100%; */
+  background-color: #7d6608;
+  padding: 3em 1em;
+  color: white;
+}
+
+footer a {
+  color: inherit;
+}
+
+.site-map {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.site-map a {
+  padding: 0.75em;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+/* Animations to show which site map item is being moused over. */
+.site-map a:hover,
+.site-map a:focus {
+  text-decoration: underline;
+}
+
+.footer-info {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info a {
+  padding: 0.75em;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+/* Animations to show which footer item is being moused over. */
+.footer-info a:hover,
+.footer-info a:focus {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social img {
+  padding: 2em;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* Footer reactive styling */
+@media (max-width: 430px) {
+  .site-map {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}

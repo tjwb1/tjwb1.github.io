@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to CSS stylesheet. -->
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- These are the google fonts link below. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Jost:wght@300&family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- This is the script link for the scroll reveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Watches and Walking</title>
+  </head>
+  <body>
+    <!-- Header-div contains the logo image, the background for the logo and the navbar menu. -->
+    <!-- This part is the structure of the menu nav bar -->
+    <div class="header-div">
+      <div>
+        <div class="logo">
+          <a href="index.html">
+            <img id="Logo2" src="images/Logo2.png" alt="Site Logo" />
+          </a>
+        </div>
+        <header>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <nav>
+            <br />
+            <br />
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="shoes.html">Shoes</a>
+              </li>
+
+              <li>
+                <a href="boots.html">Boots</a>
+              </li>
+
+              <li>
+                <a href="watches.html">Watches</a>
+              </li>
+
+              <li>
+                <a href="outfits.html">Outfits</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- This is the hamburger menu -->
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+        </header>
+      </div>
+    </div>
+    <!-- These breaks give an appropriate amount of space between the header banner and the start of page content. -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- This is the main area for the page content. -->
+    <!-- The pattern for the first article, comments etc, follows for the other articles. -->
+    <main>
+      <!-- This section tag is the main space containing the articles on the page. -->
+      <section class="articles">
+        <!-- The following container, div, modal container etc is part of the code that helps the enlargeImg() function work. -->
+        <div class="expandables-container">
+          <div class="expandable" id="e1">
+            <article class="footwear">
+              <a href="#Kswiss">
+                <p>
+                  <img
+                    src="images/KSwiss.jpg"
+                    alt="Nice K-SWiss trainers"
+                    class="footwear-image"
+                  />These K-Swiss trainers are all kinds of colours aren't they.
+                  I think they're as colourful as tropical birds. Can you
+                  imagine having tropical birds as shoes?! I wonder if they
+                  could still fly while carrying you. That would be great, you
+                  would never have to wait for a bus again, you could just fly
+                  wherever you wanted to go. I suppose rain may cause some
+                  issues both for you, and your bird-trainers, as no one likes
+                  to get wet in the rain really. I'm not sure how being wet
+                  would affect the birds aerodynamic properties either, that's
+                  definitely something to consider before using birds as
+                  trainers.
+                </p>
+              </a>
+            </article>
+            <div class="expandee">
+              <div class="modal-container" id="modal-container1">
+                <div class="modal">
+                  <img
+                    class="modal-img"
+                    src="images/KSwiss.jpg"
+                    alt="Nice K-Swiss trainers"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable" id="e2">
+            <article class="footwear" id="brown1">
+              <a href="#BrownOx">
+                <p>
+                  <img
+                    src="images/BrownShoes.jpg"
+                    alt="A nice pair of brown oxfords"
+                    class="footwear-image"
+                  />The title of this article on the home page says it all.
+                  These nice, brown oxford shoes are somehow managing to float
+                  in mid-air. There's really only one explanation, magic. I
+                  think this is pretty much genuine proof that magic exists and
+                  as we now have the proof, it's safe to say that Harry Potter
+                  must be a true story as well. I think we'd better go and try
+                  and find that door on the train station platform that he walks
+                  through because I once saw one of those movies and there was a
+                  street that had some great shops on it. I expect it's better
+                  than any outlet village here in the UK. It's pretty much a
+                  sure thing that they will have all the major designer brands
+                  there as well, I have been after some Gucci sunglasses for a
+                  while. Now I know there's a hidden, untapped world of shopping
+                  out there I can't wait to explore it.
+                </p>
+              </a>
+            </article>
+            <div class="expandee">
+              <div class="modal-container">
+                <div class="modal">
+                  <img
+                    class="modal-img"
+                    src="images/BrownShoes.jpg"
+                    alt="A nice pair of brown oxfords"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <article class="footwear">
+              <a href="#GreyTrn">
+                <p>
+                  <img
+                    src="images/GreyTrainers.jpg"
+                    alt="Grey trainers being thrown in the air"
+                    class="footwear-image"
+                    id="grey1"
+                  />It would be very easy to assume that these trainers are also
+                  the subject of magic, but, I think a more realistic scenario
+                  is that the owner just doesn't want them any more. And can you
+                  blame them? Look at their boring grey colour and strange
+                  waffle pattern. I bet that traps the dirt and gets filthy so
+                  quickly. One thing I would point out is the person throwing
+                  them is obviously not great at sports! I mean thery appear to
+                  be on a bridge of some sort and the logical thing would be to
+                  throw them off the bridge. It seems they either lack the
+                  physical strength to throw them that far, or they don't have
+                  the throwing technique. Have you ever tried throwing something
+                  with your weak arm? That's what this person throws like....you
+                  can tell!!
+                </p>
+              </a>
+            </article>
+            <div class="expandee">
+              <div class="modal-container">
+                <div class="modal">
+                  <img
+                    class="modal-img"
+                    src="images/GreyTrainers.jpg"
+                    alt="Grey trainers being thrown in the air"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable" id="e4">
+            <article class="footwear">
+              <a href="#BlackOx">
+                <p>
+                  <img
+                    src="images/blackOxfords.jpg"
+                    alt="A nice pair of black oxfords"
+                    class="footwear-image"
+                  />Harry Potter is at it again!!!
+                </p>
+              </a>
+            </article>
+            <div class="expandee">
+              <div class="modal-container">
+                <div class="modal">
+                  <img
+                    class="modal-img"
+                    src="images/blackOxfords.jpg"
+                    alt="A nice pair of black oxfords"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable" id="e5">
+            <article class="footwear">
+              <a href="#DoubleMonk">
+                <p>
+                  <img
+                    src="images/doubleMonks.jpg"
+                    alt="Nice brown double monkstrap shoes"
+                    class="footwear-image"
+                  />This is more like it. A nice, normal stylish photo of some
+                  nice shoes. The floor looks quite shiny though and it's making
+                  me worried that it's a bowling alley! The surface on a bowling
+                  alley is so slippery! I bet you've seen videos of people
+                  falling over on bowling alleys on YouTube or some other site.
+                  I have a genuine concern for the owner of these shoes that
+                  they're going to try and use them for bowling. That's so
+                  unsafe! I suppose the only upside to all of this is that once
+                  they've fallen over and someone has filmed it and put it on
+                  the internet, at least people will comment on how nice their
+                  shoes are.
+                </p>
+              </a>
+            </article>
+            <div class="expandee">
+              <div class="modal-container">
+                <div class="modal">
+                  <img
+                    class="modal-img"
+                    src="images/doubleMonks.jpg"
+                    alt="Nice brown double monknstrap shoes"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable" id="e6">
+            <article class="footwear">
+              <a href="#LV">
+                <p>
+                  <img
+                    src="images/LVTrainers.jpg"
+                    alt="LV Trainers in white"
+                    class="footwear-image"
+                  />Oh, I love these. I think I want them. But I'm 42 years old
+                  and I wonder if they're a bit young for me. I think I could
+                  pull them off though, so maybe they'll be on my birthday
+                  list?! We'll see.
+                </p>
+              </a>
+            </article>
+            <div class="expandee">
+              <div class="modal-container">
+                <div class="modal">
+                  <img
+                    class="modal-img"
+                    src="images/LVTrainers.jpg"
+                    alt="LV Trainers in white"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- This is the start of the footer section. -->
+      <footer>
+        <!-- Site map contains links to all the pages on the site -->
+
+        <ul class="site-map">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="boots.html">Boots</a></li>
+          <li><a href="watches.html">Watches</a></li>
+          <li><a href="outfits.html">Outfits</a></li>
+        </ul>
+        <!-- The social media links and other content is a UL for ease of styling. The Contact and Privacy links will not link anywhere as it's beyond the requirements of this project. -->
+        <ul class="footer-info">
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <ul class="footer-social">
+          <li>
+            <a href="#"
+              ><img
+                class="img-link"
+                src="images/fbIcon.png"
+                alt="Link to Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="img-link"
+                src="images/twitIcon.png"
+                alt="Link to Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="img-link"
+                src="images/instaIcon.png"
+                alt="Link to Instagram"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <!-- This is the main link to the script that controls most of the pages effects. -->
+    <script src="script.js"></script>
+  </body>
+</html>

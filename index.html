@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to CSS stylesheet. -->
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- These are the google fonts link below. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Jost:wght@300&family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- This is the script link for the scroll reveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Watches and Walking</title>
+  </head>
+  <body>
+    <!-- Header contains the logo image, the background for the logo and the navbar menu. -->
+
+    <!-- This part is the structure of the menu nav bar. -->
+    <div class="header-div">
+      <div>
+        <div class="logo">
+          <a href="index.html">
+            <img id="Logo2" src="images/Logo2.png" alt="Site Logo" />
+          </a>
+        </div>
+        <header>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <nav>
+            <br />
+            <br />
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="shoes.html">Shoes</a>
+              </li>
+
+              <li>
+                <a href="boots.html">Boots</a>
+              </li>
+
+              <li>
+                <a href="watches.html">Watches</a>
+              </li>
+
+              <li>
+                <a href="outfits.html">Outfits</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- This is the hamburger menu -->
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
+        </header>
+      </div>
+    </div>
+    <!-- These breaks give an appropriate amount of space between the header banner and the start of page content. -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- This is the main area for the page content. -->
+    <main id="main">
+      <!-- Intro section contains the text for the about paragraph as an H2 to aid styling. -->
+      <section class="intro">
+        <h2 class="about">
+          Welcome to <span class="special-text">Watches</span> and
+          <span class="special-text">Walking</span>. <br /><br />
+          A premium magazine for sartorial enthusiasts with a focus on
+          <span class="special-text">fine</span> footwear and timepieces.
+          <br /><br />
+          Be <span class="special-text">inspired</span> by the best articles and
+          images to help you on your search for the perfect style.
+        </h2>
+      </section>
+      <!-- This is the large main article image on the home page. This could be changed periodically as a new article becomes the main focus. -->
+      <section class="scroll">
+        <div class="scroll-img" id="img-1">
+          <img
+            src="images/BrownChukka.jpg"
+            alt="Brown chukka boots"
+            onclick="enlargeImg()"
+          />
+
+          <button id="btn1" onclick="resetImg()">x</button>
+          <a href="boots.html">Are these the best boots known to man?</a>
+        </div>
+      </section>
+
+      <!-- This is a spacer div for aesthetic reasons. -->
+      <div class="space"></div>
+
+      <!-- This is a short article intro paragraph. -->
+      <p class="article-intro">
+        <span class="special-text">Explore</span> some of our favourite items.
+        <br />
+        We have handpicked the best in shoes, boots and timepieces for you.
+      </p>
+
+      <!-- This section will contain the smaller sub-tiles with each one having an article title that will appear as you hover over the image. It will be a clickable link to the general page for the content. -->
+      <div class="container">
+        <div class="article-grid">
+          <div class="article">
+            <img
+              src="images/BrownShoes.jpg"
+              alt="Brown oxford shoes leaning on a wall"
+              class="article__img"
+            />
+            <div class="article-text">
+              <h2 class="article-title">
+                <a href="shoes.html#BrownOx"
+                  >These shoes appear to float as if by magic!</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/GreyTrainers.jpg"
+              alt="Grey trainers being thrown in the air"
+              class="article__img"
+            />
+            <div class="article-text">
+              <h2 class="article-title">
+                <a href="shoes.html#GreyTrn">Man throws grey trainers!</a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/greatBoots.jpg"
+              alt="Great brown boots"
+              class="article__img"
+            />
+            <div class="article-text">
+              <h2 class="article-title">
+                <a href="boots.html">This is how to TIE bootlaces!</a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/brogueBoots.jpg"
+              alt="Lovely brown brogue boots"
+              class="article__img"
+            />
+            <div class="article-text">
+              <h2 class="article-title">
+                <a href="boots.html">This is how to LACE boots!</a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/patek2.jpg"
+              alt="Patek Philipe Nautilus Watch"
+              class="article__img"
+            />
+            <div class="article-text">
+              <h2 class="article-title">
+                <a href="watches.html#watch3"
+                  >I doubt you'll ever own this watch!</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              src="images/speedy1.jpg"
+              alt="Omega Speedmaster watch on wrist"
+              class="article__img"
+            />
+            <div class="article-text">
+              <h2 class="article-title">
+                <a href="watches.html#watch1"
+                  >Is this the most classic of all watches?</a
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is the start of the footer section. -->
+      <footer>
+        <!-- Site map contains links to all the pages on the site. -->
+        <ul class="site-map">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="boots.html">Boots</a></li>
+          <li><a href="watches.html">Watches</a></li>
+          <li><a href="outfits.html">Outfits</a></li>
+        </ul>
+        <!-- The social media links and other content is a UL for ease of styling. The Contact and Privacy links will not link anywhere as it's beyond the requirements of this project. -->
+        <ul class="footer-info">
+          <li>
+            <a href="index.html">Contact</a>
+          </li>
+          <li><a href="index.html">Privacy</a></li>
+        </ul>
+        <ul class="footer-social">
+          <li>
+            <a href="https://en-gb.facebook.com/"
+              ><img
+                class="img-link"
+                src="images/fbIcon.png"
+                alt="Link to Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=en"
+              ><img
+                class="img-link"
+                src="images/twitIcon.png"
+                alt="Link to Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/?hl=en"
+              ><img
+                class="img-link"
+                src="images/instaIcon.png"
+                alt="Link to Instagram"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <!-- This is the main link to the script that controls most of the pages effects. -->
+    <script src="script.js"></script>
+  </body>
+</html>

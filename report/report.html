@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        line-height: 1.5em;
+        padding-left: 10px;
+      }
+
+      .appendices {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wireFrames {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mockUps {
+        display: flex;
+        flex-direction: column;
+      }
+
+      img {
+        height: fit-content;
+        width: fit-content;
+      }
+
+      ul {
+        list-style: none;
+      }
+    </style>
+    <title>Report</title>
+  </head>
+  <body>
+    <h1>Web Development Project Report</h1>
+    <h2>Toby Box</h2>
+
+    <h3>Introduction</h3>
+    <p>
+      I decided to create a topical magazine website that focusses on footwear,
+      watches and men's style. I chose this as my subject as I wanted to work on
+      something that interests me and allows me to really try and create a
+      connection with visitors to the website. The aim was to take visitors on a
+      journey from footwear, through watches, to complete outfits across the
+      five pages, so it followed a logical sequence and each page built on the
+      previous. For each page I aimed to use something slightly different as a
+      main feature, but I wanted the style to be consistent across the site and
+      the theme and colour scheme to remain constant. I was very keen that the
+      style of the page match the subject and conveyed an upmarket and
+      classically stylish image. When considering the structure for the website
+      I wanted to try and make the website flow easily from one page to the
+      next, so I decided to use five individual pages and not have sub-pages. I
+      feel that a linear structure aids navigation and keeps the format simple,
+      allowing users to navigate through the site easily and in a logical order.
+      As the website is limited to five pages, I felt that a hierarchical
+      structure would overly complicate the site and would inhibit the flow and
+      the navigation journey I wanted to promote.
+    </p>
+
+    <h3>Inspiration</h3>
+    <p>
+      A few years ago, I made a big career decision and to celebrate and mark
+      the occasion I bought a nice watch and some nice shoes. Since then I have
+      become more and more interested in men's style, with a particular focus on
+      watches and footwear. When the final project topic was released, I saw it
+      as the perfect opportunity to work on a subject I enjoyed as a topical
+      magazine website. I follow a number of YouTube channels, Mr Porter, He
+      Spoke Style, You're Terrific and Watch Collecting Strategy to name a few.
+      Each of those channels has a unique style and I was inspired to create my
+      website to be cool, stylish and in keeping with the theme and subject. I
+      browsed websites for inspiration and Sneakers-Magazine.com was perhaps my
+      biggest inspiration for layout. I liked the clean look of the pictures and
+      how the picture tiles had no border and the text was placed outside the
+      image. I decided to replicate that on my home page but change the colour
+      scheme. The layout of Mr Porters journal section and the Permanent Style
+      website were a real inspiration for how to format my articles and images
+      and I felt that the fonts and colours reflected a very 'grown up' subject.
+      I didn't copy the colour schemes, but I liked how the contrast of text and
+      articles worked so I tried to implement a similar contrast on my website.
+      I also watched a number of interesting videos on YouTube about website
+      design but one that stuck out to me was "1 design trend in 2022 that I
+      think will be BIG! (7 examples)" by DesignCourse. I didn't copy any one
+      thing from the video, but it gave me inspiration to try new things such as
+      scroll effects, picture enlargement and filter menus. Those three areas of
+      inspiration really formed the visual design of my website and helped me
+      create an individual style that I felt matched the subject matter.
+    </p>
+
+    <h3>Accessibility</h3>
+    <div>
+      I have taken a number of steps to ensure accessibility in my website. The
+      3 main ways my site is accessible are:
+      <ol>
+        <li>
+          I have used clear alt text for images to ensure screen readers can
+          understand exactly what the image is portraying.
+        </li>
+        <li>
+          I have ensured that I use relative text sizes and accounted for
+          resizing text when changing screen sizes. This enables the text to
+          scale depending on the other content of the page and the page size. I
+          have also ensured that when a user zooms in to the page the text is
+          still readable.
+        </li>
+        <li>
+          I have ensured that the site is keyboard friendly and users are able
+          to 'tab' around the pages with ease. I have achieved this by using
+          focus in some areas and ensuring that articles are linked by 'a href'
+          elements to aid navigation.
+        </li>
+      </ol>
+    </div>
+
+    <h3>Usability</h3>
+    <p>
+      When creating my website, usability was extremely important to me and I
+      aimed to achieve it across three main areas, Navigation, Content Clarity
+      and Responsiveness. When looking at navigation I decided a simple, linear
+      structure for the website would ensure all the content was easily
+      available in a clear, logical order for the website users. I made the
+      navigation bar common to all pages and made sure that the menu headings
+      reacted when scrolled over, by using the hover property in CSS. Visually
+      seeing a change in colour and underline means that it is very easy to see
+      which menu item you are selecting. This was applied to both the navigation
+      bar and the footer menu to ensure parity and consistency. When creating my
+      content I wanted to ensure that not only the style reflected the subject
+      but that the content was clear and easy to see and read. I picked fonts
+      and colours that I knew stood out and created contrast to enhance viewing.
+      I picked images that were in keeping with the style of the website but
+      also were clear, well photographed and unambiguous. I kept text outside of
+      articles to a minimum to aid in scanning the website and made sure that
+      the layout drew the users eyes to the main content. While looking at
+      responsiveness my goal was to add to the accessibility of the site while
+      making sure that it still maintained it's style and image when looked at
+      on different screen sizes. One area that I focussed heavily on was the
+      navigation menu and ensuring that at the appropriate screen size it turned
+      to a hamburger menu. This achieved two things, the menu was easy to use as
+      I included the exact same heading and animations highlighting the selected
+      item, and, hamburger menus are familiar as they are widely used so I added
+      that comfort and familiarity to the website.
+    </p>
+
+    <h3>Learning</h3>
+    <div>
+      <ol>
+        <li>
+          Flex box Use <br />
+          Although the lectures briefly touched on Flexbox as a tool for laying
+          out webpages, I found that I really needed to learn more myself to
+          effectively use it in my website. I undertook the Udemy Web
+          Development course concurrently to the lectures and it really helped
+          me understand the specifics of Flexbox. I was able to then plan and
+          construct my pages with a much better understanding of how the flex
+          display property worked and how parent and child elements reacted
+          based on their Flexbox settings. I felt that I used grid display in
+          appropriate areas but really harnessed the power of Flexbox to create
+          the majority of my website. I practiced often by creating simple pages
+          with coloured boxes to learn how the different properties affected the
+          layout and then applied what I had seen to my own website. A great
+          example of this was when creating the Watches page, I was having some
+          difficulty with how the articles were positioning themselves so
+          created a simple, coloured boxes webpage and practiced using different
+          Flexbox settings to get the right layout. I then transferred the
+          settings to my page.
+        </li>
+        <li>
+          Hamburger menu creation <br />
+          I knew at a very early stage that I wanted a hamburger menu in my
+          mobile version of the site and I think it is familiar, current and
+          stylish when using a mobile device or smaller screen. I found that a
+          hamburger menu was a particularly difficult object to create with
+          little experience in Web Design. I tried multiple YouTube tutorials
+          for information and guidance on how to create the menu and settled on
+          the framework from a YouTube video by Kevin Powell titled "Create a
+          responsive navigation nav with no JS!". I then adapted the basics of
+          the layout and method to suit my theme, colour scheme and menu items.
+          I found it very difficult to work out how to size and place my menu in
+          the exact position I wanted and not affect its action when in
+          responsive mode or using smaller screens. I tried many different
+          settings and this also helped me explore more CSS properties and gain
+          a greater understanding of how everything fit and worked together.
+        </li>
+        <li>
+          Picture resize functionality <br />
+          I wanted to have the ability to click on a picture to enlarge it and
+          realised early on the Javascript was the easiest way to achieve this
+          functionality. I managed to work out, by myself, how to apply it to
+          the main article image on my home page using DOM functions and
+          buttons. I tried a number of different CSS properties to make sure the
+          image had the correct presentation and position. I couldn't work out
+          how to apply my enlargeImg() function to multiple images so decided to
+          try a different system for the Shoes and Boots pages. I asked a
+          question on StackOverflow about my enlargeImg() function and was
+          signposted to a previous topic and code solution. I used this code
+          snippet as the basis of my page and then inserted it into the main
+          section of my webpages. This allowed me to have the same header and
+          footer but have a new structure within the main element of the body.
+          This did mean I had to work through a number of problems caused by
+          inherited properties which needed to be accounted for in the new code
+          for it to work. I learned a lot about how to use existing code and
+          refactor it to suit my ideas. The new structure for the Shoes and
+          Boots pages now focussed on a series of expandable boxes which allowed
+          me to use the Javascript function to enlarge the pictures across all
+          the images. It was a very interesting problem to work through and I
+          learned about containers and expandable elements and how to use event
+          listeners to control them. This was perhaps the most difficult problem
+          I worked through but also the most interesting.
+        </li>
+      </ol>
+    </div>
+
+    <h3>Evaluation I</h3>
+    <p>
+      I think that the style, colours and theme of the website work well. I feel
+      that they give a feeling of sophistication in keeping with a stylish
+      menswear site. My menu system works well, and I think that the way it
+      switches from a nav bar to a hamburger menu is well coded and responds
+      well at various screen sizes. I am happy with the different methods of
+      enlarging pictures that I have used; I feel that they bring some extra
+      depth and complexity to the website. I am pleased with my Javascript
+      functionality, I think the combination of self-written and refactored code
+      adds some great effects to the website and enhances the user experience. I
+      am pleased that I had already completed both Introduction to Programming
+      modules prior to this course as the background Javascript knowledge really
+      helped me understand some of the more difficult concepts. Along with the
+      Javascript, I feel that the use of flex and grid layouts is appropriate
+      and at the right level to enhance the website. It's a fairly simple design
+      and I feel that my use of different layout systems ensures that the
+      responsiveness and usability of the site is at the required standard.
+    </p>
+
+    <h3>Evaluation II</h3>
+    <p>
+      I think the majority of areas I feel that could be improved are as a
+      result of the structure of the website. For example, I found sizing the
+      embedded YouTube videos difficult and I feel that I could investigate
+      better ways to implement those. While creating the website, as I decided
+      on adding extra usability, I found that in order to either apply a new
+      effect, or to use refactored code, I needed to change the structure and
+      add new elements. This caused me many problems with inherited properties,
+      and I spent a lot of time manipulating existing code to ensure the new
+      effects worked and did not change the layout. I want to learn more about
+      how properties are inherited and also about how functions bubble up in
+      Javascript and I will become more familiar with the developer tools at my
+      disposal to help with that. In the future, now I have learned a great deal
+      about the design and how to implement various effects, I would structure
+      my webpages differently and be more meticulous in my planning. I used
+      Flexbox as the main display layout for my website as it seemed easier to
+      work with and more powerful, but, looking at the structure of my website I
+      feel that I could've made more use of grid and it would've perhaps been
+      easier to work with. I decided against using bootstrap as I didn't feel it
+      would give me any enhanced functionality but in the future I would
+      definitely look at how to incorporate other frameworks.
+    </p>
+
+    <section>
+      <h3>Resources</h3>
+      <h4>Inspirational websites:</h4>
+      <ul>
+        <li>
+          [1] Sneakers Mag, 'Sneakers Mag.', Unknown. [Online]. Available:
+          https://sneakers-magazine.com. [Accessed: January 2022]
+        </li>
+        <li>
+          [2] Mr Porter, 'Mr Porter', 2022. [Online]. Available:
+          https://mrporter.com/en-us/. [Accessed: January 2022]
+        </li>
+        <li>
+          [3] S Crompton, 'Permanent Style', 2022. [Online]. Available:
+          https://permanentstyle.com. [Accessed: January 2022]
+        </li>
+      </ul>
+
+      <h4>Resources I used heavily in the creation of the page structure:</h4>
+      <ul>
+        <li>
+          [1] C Steele, Udemy, 'The Web Developer Bootcamp 2022', 2022.
+          [online]. Available:
+          https://www.udemy.com/course/the-web-developer-bootcamp/. [Accessed:
+          January 2022]
+        </li>
+        <li>
+          [2] Google Chrome Developers, 'The fundamentals of CSS
+          layout|workshop', 1 Dec 2021. [online]. Available:
+          https://www.youtube.com/watch?v=yMEjLBKyvEg. [Accessed: January 2022]
+        </li>
+        <li>
+          [3] K Powell, 'Create a responsive navigation bar with no JS!', 16 May
+          2018. [Online]. Available:
+          https://www.youtube.com/watch?v=8QKOaTYvYUA. [Accessed: January 2022]
+        </li>
+        <li>
+          [4] DesignCourse, '1 Design trend in 2022 That I Think will be BIG! (7
+          Examples)', 23 Dec 2021. [Online]. Available:
+          https://www.youtube.com/watch?v=6VjvT5uMm-w. [Accessed: January 2022]
+        </li>
+      </ul>
+
+      <h4>Resources I used for code:</h4>
+      <ul>
+        <li>
+          [1] jlmakes, 'jlmakes/scrollreveal, 2021. [Online]. Available:
+          https://github.com/jlmakes/scrollreveal. [Accessed: February 2022]
+        </li>
+        <li>
+          [2] Teemu, 'Answer to "Multiple read more / read less sections are not
+          working on a page" question', 8 Dec 2021. [Online]. Available:
+          https://stackoverflow.com/questions/70270272/multiple-read-more-read-less-sections-are-not-working-on-a-page/70271006#70271006.
+          [Accessed: February 2022]
+        </li>
+        <li>
+          [3] Azharos. 'Desain-Front-End/Filter/image/', 2020. [Online].
+          Available:
+          https://github.com/azharos/Desain-Front-End/tree/master/Filter%20Image.
+          [Accessed: February 2022]
+        </li>
+      </ul>
+
+      <h4>All images on my wbsite are from Unsplash.com and are free.</h4>
+
+      <h4>YouTube videos I have used in my code:</h4>
+      <ul>
+        <li>
+          [1] Watch on Wrist, 'Omega Speedmaster Moonwatch 3861 (2021)', 1 May
+          2021. [Online]. Available:
+          https://www.youtube.com/watch?v=m_4o9mrIl6U. [Accessed: February 2022]
+        </li>
+        <li>
+          [2] Hatton Jewellers, 'Rolex Datejust 36mm Steel & Gold - Hatton
+          Jewellers London', 1 Apr 2017. [Online]. Available:
+          https://www.youtube.com/watch?v=hMlm_qkmmRs. [Accessed: February 2022]
+        </li>
+        <li>
+          [3] Luxury Showcase, 'Patek Philippe Nautilus 5711/1A-010 Blue Dial
+          40mm Stainless Steel swiss made luxury watch', 18 Aug 2017. [Online].
+          Available: https://www.youtube.com/watch?v=yRaEe2zhGJo. [Accessed:
+          February 2022]
+        </li>
+      </ul>
+    </section>
+
+    <section class="appendices">
+      <h3>Appendices</h3>
+      <h4>Site map</h4>
+      <img src="report-images/Site-map.jpg" alt="Site map" />
+
+      <h4>Wireframes</h4>
+      <div class="wireFrames">
+        <img
+          src="report-images/Home-page-desktop.jpg"
+          alt="Home page desktop"
+        />
+        <img
+          src="report-images/Shoe-page-desktop.jpg"
+          alt="Shoe page desktop"
+        />
+        <img
+          src="report-images/Boots-page-desktop.jpg"
+          alt="Boot page desktop"
+        />
+        <img
+          src="report-images/Watches-page-desktop.jpg"
+          alt="Watches page desktop"
+        />
+        <img
+          src="report-images/Outfits-page-desktop.jpg"
+          alt="Outfits page desktop"
+        />
+        <img src="report-images/Home-page-mobile.jpg" alt="Home page mobile" />
+        <img src="report-images/Shoe-page-mobile.jpg" alt="Shoe page mobile" />
+        <img src="report-images/Boot-page-mobile.jpg" alt="Boot page mobile" />
+        <img
+          src="report-images/Watches-page-mobile.jpg"
+          alt="Watches page mobile"
+        />
+        <img
+          src="report-images/Outfits-page-mobile.jpg"
+          alt="Outfits page mobile"
+        />
+      </div>
+
+      <h4>Mock ups</h4>
+      <div class="mockUps">
+        <h5>Home page desktop</h5>
+        <img
+          src="report-images/Mock-up-home-page-desktop.jpg"
+          alt="Mock up Home page desktop"
+        />
+        <h5>Shoe page desktop</h5>
+        <img
+          src="report-images/Mock-up-shoe-page-desktop.jpg"
+          alt="Mock up Shoe page desktop"
+        />
+        <h5>Boot page desktop</h5>
+        <img
+          src="report-images/Mock-up-boot-page-desktop.jpg"
+          alt="Mock up Boot page desktop"
+        />
+        <h5>Watches page desktop</h5>
+        <img
+          src="report-images/Mock-up-watches-page-desktop.jpg"
+          alt="Mock up Watches page desktop"
+        />
+        <h5>Outfits page desktop</h5>
+        <img
+          src="report-images/Mock-up-outfits-page-desktop.jpg"
+          alt="Mock up Outfits page desktop"
+        />
+        <h5>Home page mobile</h5>
+        <img
+          src="report-images/Mock-up-home-page-mobile.jpg"
+          alt="Mock up Home page mobile"
+        />
+        <h5>Shoe page mobile</h5>
+        <img
+          src="report-images/Mock-up-shoe-page-mobile.jpg"
+          alt="Mock up Shoe page mobile"
+        />
+        <h5>Boot page mobile</h5>
+        <img
+          src="report-images/Mock-up-boot-page-mobile.jpg"
+          alt="Mock up Boot page mobile"
+        />
+        <h5>Watches page mobile</h5>
+        <img
+          src="report-images/Mock-up-watch-page-mobile.jpg"
+          alt="Mock up Watches page mobile"
+        />
+        <h5>Outfits page mobile</h5>
+        <img
+          src="report-images/Mock-up-outfits-page-mobile.jpg"
+          alt="Mock up Outfits page mobile"
+        />
+      </div>
+    </section>
+  </body>
+</html>
